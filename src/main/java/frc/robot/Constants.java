@@ -48,6 +48,7 @@ public final class Constants {
     public static final double LAUNCHING_LAUNCHER_VOLTAGE = 10.6; // bottom one
     public static final double SPIN_UP_FEEDER_VOLTAGE = 0;
     public static final double SPIN_UP_SECONDS = 1;
+    public final boolean Jose = true;
   }
 
   public static final class OperatorConstants {
