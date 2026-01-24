@@ -9,7 +9,9 @@ import edu.wpi.first.hal.FRCNetComm.tResourceType;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.TalonSRX;
+import com.ctre.phoenix.motorcontrol.can;
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to
@@ -18,12 +20,15 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
  * the package after creating this project, you must also update the
  * build.gradle file in the
  * project.
+ * @param <mytalon>
+ * @param <mytalon>
  */
-public class Robot extends TimedRobot {
+public class Robot<mytalon> extends TimedRobot {
   private Command m_autonomousCommand;
 
   private RobotContainer m_robotContainer;
 
+  com.ctre.phoenix.motorcontrol.can.TalonSRX mytalon = new com.ctre.phoenix.motorcontrol.can.TalonSRX();
   /**
    * This function is run when the robot is first started up and should be used
    * for any
@@ -35,6 +40,7 @@ public class Robot extends TimedRobot {
     // and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
+    mytalon.set(ControlMode.PercentOutput, 0);
 
     // Used to track usage of Kitbot code, please do not remove.
     HAL.report(tResourceType.kResourceType_Framework, 10);
