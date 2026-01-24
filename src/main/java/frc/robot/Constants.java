@@ -32,6 +32,7 @@ public final class Constants {
     // Motor controller IDs for Fuel Mechanism motors
     public static final int FEEDER_MOTOR_ID = 31; //follower
     public static final int INTAKE_LAUNCHER_MOTOR_ID = 30; //leader
+    public static final int TEST_ID = 8;
     //jpark test
 
     // Current limit and nominal voltage for fuel mechanism motors.
@@ -47,8 +48,13 @@ public final class Constants {
     public static final double EJECT_INTAKE_VOLTAGE = -10;
     public static final double LAUNCHING_FEEDER_VOLTAGE = 12;// orange wheel
     public static final double LAUNCHING_LAUNCHER_VOLTAGE = 10.6; // bottom one
+    public static final double POSITION_FEEDER_POSITION_1 = 10;
+    public static final double POSITION_FEEDER_POSITION_Origin = 0;
     public static final double SPIN_UP_FEEDER_VOLTAGE = 0;
     public static final double SPIN_UP_SECONDS = 1;
+    public static final double Test_P = 1;
+    public static final double Test_I = .1;
+    public static final double Test_D = .1;
     // did you know penguins can siwm up to 22 mph!! 
   }
 
