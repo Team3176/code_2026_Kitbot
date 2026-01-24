@@ -10,8 +10,8 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import com.ctre.phoenix.motorcontrol.ControlMode;
-import com.ctre.phoenix.motorcontrol.TalonSRX;
-import com.ctre.phoenix.motorcontrol.can;
+//import com.ctre.phoenix.motorcontrol.TalonSRX;
+//import com.ctre.phoenix.motorcontrol.can;
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to
@@ -40,7 +40,7 @@ public class Robot<mytalon> extends TimedRobot {
     // and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
-    mytalon.set(ControlMode.PercentOutput, 0);
+    //mytalon.set(ControlMode.PercentOutput, 0);
 
     // Used to track usage of Kitbot code, please do not remove.
     HAL.report(tResourceType.kResourceType_Framework, 10);
